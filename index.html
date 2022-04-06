@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 1;
+
+        }
+
+        ::placeholder {
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .maindiv {
+
+            float: center;
+            background-color: rgb(51, 148, 212);
+            background-size: cover;
+            width: 900px;
+            height: 650px;
+            margin: 20px;
+            padding: 10px;
+
+        }
+
+        .container {
+            font-size: 14px;
+            border: 2px solid black;
+            width: 50%;
+            background-color: rgb(227, 243, 243);
+
+            padding: 10px;
+            margin: 40px;
+
+
+        }
+
+        h1 {
+            text-align: left;
+            color: rgb(51, 148, 212);
+         }
+
+        #message {
+            padding: 10px 0;
+            margin: 0px 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        #contact {
+            font-size: 30px;
+            color: rgb(51, 148, 212);
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+        form {
+            border: none;
+        }
+
+        .input {
+            display: flex;
+            width: 100%;
+
+            padding: 16px 0;
+            margin: 8px 0;
+            box-sizing: border-box;
+            display: inline-block;
+            border-color: rgb(230, 233, 219);
+        }
+
+        button {
+            width: 100%;
+            background-color: rgb(51, 148, 212);
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv" style="position: relative; left:300px">
+
+
+        <form action="/" method="get">
+            <div class="container" style="position:relative; left:340px;">
+                <p id="contact">Contact Us</p>
+
+                <lable for="name"></lable>
+                <input type="text" id="name" class="input" placeholder="Full name" required>
+
+
+                <lable for="email"></lable>
+                <input type="email" id="email" class="input" placeholder="Email" required>
+
+
+                <lable for="phn"></lable>
+                <input type="tel" id="phn" class="input" placeholder="Phone number" required>
+
+
+                <lable for="website"></lable>
+                <input type="text" id="website" class="input" placeholder="Website" required>
+                <p id="message">Message</p>
+                <textarea rows="5" cols="3" class="input"></textarea>
+
+                <button type="submit" class="button"> submit</button>
+            </div>
+
+
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>
